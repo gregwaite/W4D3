@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <% if logged_in? %>
+      <h1> Sup dingus. This your stupid name you stupid stupid dum dum dummy dum idiot dumb: <%= current_user.username %>? </h1>
+    <form action="<%= session_url %>" method="POST">
+
+
+
+
   </body>
 </html>
